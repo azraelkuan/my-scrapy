@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dianping</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" >
+</head>
+<body>
+     <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="panel panel-info">
+                <div class="panel-heading"><h2>Dianping Web Spider</h2></div>
+                <div class="panel-body">
+                    <p>1. create a table of the default database and click the yes at the right, named with dp_xxx</p>
+                    <p>2. need to set city and province usually u can choose chinese</p>
+                    <p>3. the city id and the cat id u can find in dianping url</p>
+                    <pre class="text-danger">
+                        example:http://www.dianping.com/search/category/2/10/r1465
+                        in the url, follow the 'category' is city id : 2
+                                    follow the city id is the cat id : 10
+                        so u need to set city id = 2 and cat id = 10
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="tablename" class="col-sm-3 control-label">Table Name</label>
+                        <div class="col-sm-7" >
+                            <input type="text" class="form-control" id="tablename" placeholder="set the tablename of the db" required>
+                        </div>
+                        <div class="col-sm-2" style="padding: 0px;">
+                            <button class="btn btn-info" id="settable" type="button">Yes ?</button>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label for="province" class="col-sm-3 control-label">Province</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="" class="form-control" id="province">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city" class="col-sm-3 control-label">City</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="" class="form-control" id="city">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cityId" class="col-sm-3 control-label">cityId</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="" class="form-control" id="cityId">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="catId" class="col-sm-3 control-label">catId</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="" class="form-control" id="catId">
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button class="btn btn-info" type="button" id="submitall">submit all the params</button>
+                    </div>
+                </form>
+            </div>
+             <div class="col-md-offset-1 col-md-5">
+                <button class="btn btn-info" type="button" id="getstate"> get all the spider </button>
+                <table class="table table-hover" id="state">
+                    <thead>
+                        <tr>
+                            <th>state</th>
+                            <th>current jobid</th>
+                            <th>start time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3">
+                <table class="table table-responsive" id="table">
+                    <thead>
+                    <tr>
+                        <th>current table</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../static/js/jquery-3.1.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/dianping.js"></script>
+</html>

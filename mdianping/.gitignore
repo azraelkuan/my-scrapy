@@ -1,0 +1,6 @@
+.idea/
+mdianping/spiders/__pycache__/
+mdianping/__pycache__/__init__.cpython-35.pyc
+mdianping/__pycache__/
+queue/food/requests.queue/p0
+queue/food/requests.seen

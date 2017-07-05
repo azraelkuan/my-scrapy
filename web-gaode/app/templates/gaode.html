@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高德网页版爬虫</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" >
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="panel panel-info">
+                <div class="panel-heading"><h2>Gaode Web Spider</h2></div>
+                <div class="panel-body">
+                    <h4 class="text-danger">1. create a table of the default database and click the yes at the right, named with web_xxx</h4>
+                    <h4>2. select the province</h4>
+                    <h4>3. select the city</h4>
+                    <h4>4. select the tags and input the keywords , u have to choose one of them at least</h4>
+                    <h4>5. don't close this web unless the spider finish its task</h4>
+                    <h4 class="text-danger">6. (leave city empty when crawl all the pro)</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="tablename" class="col-sm-3 control-label">Table Name</label>
+                        <div class="col-sm-7" >
+                            <input type="text" class="form-control" id="tablename" placeholder="set the tablename of the db" required>
+                        </div>
+                        <div class="col-sm-2" style="padding: 0px;">
+                            <button class="btn btn-info" id="settable" type="button">Yes ?</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="province" class="col-sm-3 control-label">Province</label>
+                        <div class="col-sm-9">
+                            <select name="" class="form-control" id="province"></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city" class="col-sm-3 control-label">City</label>
+                        <div class="col-sm-9">
+                            <select name="" class="form-control" id="city"></select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tag" class="col-sm-3 control-label">Tag</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tag" placeholder="spilt it by ;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Basic Tag</label>
+                        <div class="col-sm-9">
+                            <button class="btn btn-sm btn-info" id="tag-sp" type="button">supermarket</button>
+                            <button class="btn btn-sm btn-info" id="tag-cosmetic" type="button">cosmetic</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="keyword" class="col-sm-3 control-label">KeyWord</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="keyword" placeholder="u can only set one">
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-3 col-sm-6">
+                        <button class="btn btn-info" type="button" id="submitall">submit all the params</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-offset-1 col-md-5">
+                <button class="btn btn-info" type="button" id="getstate"> get all the spider </button>
+                <table class="table table-hover" id="state">
+                    <thead>
+                        <tr>
+                            <th>current jobid</th>
+                            <th>state</th>
+                            <th>start time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3">
+                <table class="table table-responsive" id="table">
+                    <thead>
+                    <tr>
+                        <th>curretn table</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../static/js/jquery-3.1.1.min.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/gaode.js"></script>
+</html>
