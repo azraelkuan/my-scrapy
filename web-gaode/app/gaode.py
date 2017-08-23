@@ -61,7 +61,7 @@ def get_params():
         keywords = ""
     table_name = request.form['table_name']
 
-    url = "http://localhost:6800/schedule.json"
+    url = "http://104.156.239.27:6800/schedule.json"
     data = {
         'project': 'gaode',
         'spider': 'gaode',

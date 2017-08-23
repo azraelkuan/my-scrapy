@@ -47,7 +47,7 @@ def get_params():
     cat_id = request.form['catid']
     table_name = request.form['table_name']
 
-    url = "http://localhost:6800/schedule.json"
+    url = "http://104.156.239.27:6800/schedule.json"
     data = {
         'project': 'mdianping',
         'spider': 'food',

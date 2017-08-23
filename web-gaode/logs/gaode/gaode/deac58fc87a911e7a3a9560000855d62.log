@@ -1,0 +1,52 @@
+2017-08-23 10:22:13 [scrapy.utils.log] INFO: Scrapy 1.4.0 started (bot: myspider)
+2017-08-23 10:22:13 [scrapy.utils.log] INFO: Overridden settings: {'LOG_LEVEL': 'INFO', 'BOT_NAME': 'myspider', 'SPIDER_MODULES': ['myspider.spiders'], 'NEWSPIDER_MODULE': 'myspider.spiders', 'LOG_FILE': 'logs/gaode/gaode/deac58fc87a911e7a3a9560000855d62.log'}
+2017-08-23 10:22:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-08-23 10:22:13 [gaode] INFO: type is <class 'list'>
+2017-08-23 10:22:13 [gaode] INFO: city is ['上海城区']
+2017-08-23 10:22:13 [gaode] INFO: tag is ['060200', '060201', '060202', '060400', '060401', '060402', '060403', '060404', '060405', '060406', '060407', '060408', '060409', '060411', '060413', '060414', '060415', '060100', '060102', '060103', '060101']
+2017-08-23 10:22:13 [gaode] INFO: kwy is 
+2017-08-23 10:22:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-08-23 10:22:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-08-23 10:22:13 [scrapy.middleware] INFO: Enabled item pipelines:
+['myspider.pipelines.GaoDePipeline']
+2017-08-23 10:22:13 [scrapy.core.engine] INFO: Spider opened
+2017-08-23 10:22:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-08-23 10:23:13 [scrapy.extensions.logstats] INFO: Crawled 90 pages (at 90 pages/min), scraped 304 items (at 304 items/min)
+2017-08-23 10:25:02 [scrapy.extensions.logstats] INFO: Crawled 141 pages (at 51 pages/min), scraped 693 items (at 389 items/min)
+2017-08-23 10:25:54 [scrapy.extensions.logstats] INFO: Crawled 146 pages (at 5 pages/min), scraped 736 items (at 43 items/min)
+2017-08-23 10:26:48 [scrapy.extensions.logstats] INFO: Crawled 173 pages (at 27 pages/min), scraped 841 items (at 105 items/min)
+2017-08-23 10:28:04 [scrapy.extensions.logstats] INFO: Crawled 392 pages (at 219 pages/min), scraped 2392 items (at 1551 items/min)
+2017-08-23 10:29:04 [scrapy.extensions.logstats] INFO: Crawled 463 pages (at 71 pages/min), scraped 3057 items (at 665 items/min)
+2017-08-23 10:30:47 [scrapy.extensions.logstats] INFO: Crawled 467 pages (at 4 pages/min), scraped 3087 items (at 30 items/min)
+2017-08-23 10:31:40 [scrapy.extensions.logstats] INFO: Crawled 477 pages (at 10 pages/min), scraped 3150 items (at 63 items/min)
+2017-08-23 10:32:32 [scrapy.extensions.logstats] INFO: Crawled 481 pages (at 4 pages/min), scraped 3186 items (at 36 items/min)
+2017-08-23 10:33:24 [scrapy.extensions.logstats] INFO: Crawled 492 pages (at 11 pages/min), scraped 3248 items (at 62 items/min)
+2017-08-23 10:34:16 [scrapy.extensions.logstats] INFO: Crawled 497 pages (at 5 pages/min), scraped 3318 items (at 70 items/min)
+2017-08-23 10:36:03 [scrapy.extensions.logstats] INFO: Crawled 562 pages (at 65 pages/min), scraped 3861 items (at 543 items/min)
+2017-08-23 10:36:55 [scrapy.extensions.logstats] INFO: Crawled 600 pages (at 38 pages/min), scraped 4180 items (at 319 items/min)
+2017-08-23 10:37:49 [scrapy.extensions.logstats] INFO: Crawled 629 pages (at 29 pages/min), scraped 4527 items (at 347 items/min)
+2017-08-23 10:38:42 [scrapy.extensions.logstats] INFO: Crawled 658 pages (at 29 pages/min), scraped 4812 items (at 285 items/min)
+2017-08-23 10:39:37 [scrapy.extensions.logstats] INFO: Crawled 718 pages (at 60 pages/min), scraped 5611 items (at 799 items/min)
+2017-08-23 10:40:33 [scrapy.extensions.logstats] INFO: Crawled 806 pages (at 88 pages/min), scraped 7047 items (at 1436 items/min)
+2017-08-23 10:41:33 [scrapy.extensions.logstats] INFO: Crawled 978 pages (at 172 pages/min), scraped 10272 items (at 3225 items/min)
+2017-08-23 10:42:29 [scrapy.extensions.logstats] INFO: Crawled 1105 pages (at 127 pages/min), scraped 12055 items (at 1783 items/min)

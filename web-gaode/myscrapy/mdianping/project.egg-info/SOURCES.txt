@@ -1,0 +1,14 @@
+setup.py
+mdianping/__init__.py
+mdianping/items.py
+mdianping/pipelines.py
+mdianping/proxy.py
+mdianping/settings.py
+mdianping/spiders/__init__.py
+mdianping/spiders/food.py
+mdianping/spiders/geocode.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt

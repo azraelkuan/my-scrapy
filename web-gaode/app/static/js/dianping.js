@@ -8,7 +8,7 @@ $("#settable").click(function () {
         alert("表名不能为空");
     } else {
         var get_data = {table_name:tablename};
-        var url = "http://127.0.0.1:5000/dianping/create_table";
+        var url = "http://104.156.239.27/dianping/create_table";
         $.get(url, get_data, function (data, status) {
             var receive = JSON.parse(data);
             if (receive['status']) {
@@ -37,7 +37,7 @@ $("#submitall").click(function () {
     } else if (cityid == "" || catid == "") {
         alert("cityid and catid all need");
     } else {
-        var url = "http://127.0.0.1:5000/dianping/get_params";
+        var url = "http://104.156.239.27/dianping/get_params";
         var post_data = {
             city: city,
             province: province,
@@ -63,7 +63,7 @@ $("#submitall").click(function () {
 });
 
 function getjob() {
-    var url = "http://localhost:6800/listjobs.json";
+    var url = "http://104.156.239.27:6800/listjobs.json";
     var get_data = {project:"mdianping"};
     $.get(url, get_data, function (data, status) {
         var receive = data;
@@ -89,7 +89,7 @@ $("#getstate").click(function () {
 });
 
 function canceljob(e) {
-    var url = "http://localhost:6800/cancel.json";
+    var url = "http://104.156.239.27:6800/cancel.json";
     var id_node = $(e).parent().parent().children()[1];
     var job_id = $(id_node).html();
     var get_data = {
@@ -110,7 +110,7 @@ getjob();
 
 
 function gettable() {
-    var url = "http://127.0.0.1:5000/dianping/get_table";
+    var url = "http://104.156.239.27/dianping/get_table";
     $.get(url, function (data, status) {
         var receive = JSON.parse(data);
         var tbody = $("#table tbody");
@@ -129,7 +129,7 @@ function gettable() {
 function exporttable(e) {
     var table_name_node = $(e).parent().parent().children()[0];
     var table_name = $(table_name_node).html();
-    var url = "http://127.0.0.1:5000/dianping/export_table";
+    var url = "http://104.156.239.27/dianping/export_table";
     window.open(url + "?table_name=" + table_name);
 }
 

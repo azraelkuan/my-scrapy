@@ -1,0 +1,3 @@
+[scrapy]
+settings = mdianping.settings
+
